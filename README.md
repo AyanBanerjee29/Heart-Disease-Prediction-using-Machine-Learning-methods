@@ -64,18 +64,21 @@ The dataset contains 14 features that represent patient health information:
 
 ---
 
-## 📝 Results Summary
+## 📝 Summary:
 
-| Model                  | Accuracy Score |
-|-----------------------|---------------|
-| Logistic Regression    | XX.XX%        |
-| K-Nearest Neighbors    | XX.XX%        |
-| Support Vector Machine | XX.XX%        |
-| Decision Tree          | XX.XX%        |
-| Random Forest          | XX.XX%        |
+| Model                  |
+|-----------------------|
+| Logistic Regression    | 
+| K-Nearest Neighbors    |
+| Support Vector Machine |
+| Decision Tree          | 
+| Random Forest          |
+|Voting Classifier (LogReg, RF, SVC, AdaBoost)|
 
-*Note: Replace `XX.XX%` with the actual results from your notebook.*
+> **Note:** Exact numerical values for Random Forest and Voting Classifier are detailed in the notebook. These models achieved the best performance specifically in terms of **Recall**, which is crucial in this healthcare context to minimize the risk of undiagnosed heart disease cases.
 
+> **Model Selection Criterion:**  
+> The models were evaluated primarily based on **Recall** to reduce the risk of False Negatives (patients with heart disease wrongly classified as healthy), as missing such cases can have severe medical consequences. The Random Forest and Voting Classifier models were thus selected for their superior recall performance.
 ---
 
 ## 📊 Key Visualizations
