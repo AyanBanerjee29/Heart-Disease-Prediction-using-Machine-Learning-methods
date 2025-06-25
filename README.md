@@ -45,10 +45,10 @@ The dataset contains 14 features that represent patient health information:
 - Split the data into training and testing sets (80:20 ratio).
 - Trained multiple machine learning models:
   - Logistic Regression
-  - K-Nearest Neighbors (KNN)
   - Support Vector Machine (SVM)
   - Decision Tree Classifier
   - Random Forest Classifier
+  - Voting Classifier (LogReg, RF, SVC, AdaBoost)
 - Performed hyperparameter tuning using GridSearchCV where applicable.
 
 ### 4. Model Evaluation
@@ -64,16 +64,7 @@ The dataset contains 14 features that represent patient health information:
 
 ---
 
-## 📝 Summary:
 
-| Model                  |
-|-----------------------|
-| Logistic Regression    | 
-| K-Nearest Neighbors    |
-| Support Vector Machine |
-| Decision Tree          | 
-| Random Forest          |
-|Voting Classifier (LogReg, RF, SVC, AdaBoost)|
 
 > **Note:** Exact numerical values for Random Forest and Voting Classifier are detailed in the notebook. These models achieved the best performance specifically in terms of **Recall**, which is crucial in this healthcare context to minimize the risk of undiagnosed heart disease cases.
 
@@ -102,15 +93,21 @@ The dataset contains 14 features that represent patient health information:
 
 | Tool/Library    | Purpose                     |
 |----------------|-----------------------------|
-| Python 3.x     | Programming Language         |
+| Python      | Programming Language         |
 | Pandas         | Data Manipulation            |
 | NumPy          | Numerical Operations         |
 | Scikit-learn   | Machine Learning Models      |
 | Matplotlib     | Data Visualization           |
 | Seaborn        | Data Visualization           |
 | Jupyter Notebook | Interactive Development   |
+|Gradio          |  UI tool to give user input to our ML models|
 
 ---
+
+
+## Note: 
+
+Upload the .pkl files in the colab and run the code of heart_app.py 
 
 
 ---
